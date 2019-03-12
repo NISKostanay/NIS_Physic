@@ -1,27 +1,22 @@
-{
-Программа: Математический маятник
-Разработчик: Макаров М.М.
-Дата создания: 25 ноября 2004
-Среда разработки: Delphi7
-}
-unit unitFrmResults;
+unit unitFrmPhaseTraectory;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ComCtrls;
+  Dialogs, TeEngine, Series, ExtCtrls, TeeProcs, Chart;
 
 type
-  TfrmResults = class(TForm)
-    txtResult: TMemo;
+  TfrmPhaseTraectory = class(TForm)
+    chartPhaseTraectory: TChart;
+    Series1: TPointSeries;
     procedure FormCanResize(Sender: TObject; var NewWidth, NewHeight: Integer;
       var Resize: Boolean);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   end;
 
 var
-  frmResults: TfrmResults;
+  frmPhaseTraectory: TfrmPhaseTraectory;
 
 implementation
 
@@ -29,13 +24,14 @@ uses unitFrmLibMain;
 
 {$R *.dfm}
 
-procedure TfrmResults.FormCanResize(Sender: TObject; var NewWidth,
+procedure TfrmPhaseTraectory.FormCanResize(Sender: TObject; var NewWidth,
   NewHeight: Integer; var Resize: Boolean);
 begin
   if Visible then Resize := False;
 end;
 
-procedure TfrmResults.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TfrmPhaseTraectory.FormClose(Sender: TObject;
+  var Action: TCloseAction);
 begin
   frmLibMain.Close;
 end;
