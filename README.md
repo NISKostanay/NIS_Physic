@@ -5,10 +5,10 @@ Jet Motion Simulation
 
 AR Planetarium
 
-<img src="Media/Space.png">
+<img src="Media/Space.png" width = "20%">
 
-<img src="Media/Main.png">
+<img src="Media/Main.png" width = "20%">
 
-<img src="Media/List.png">
+<img src="Media/List.png" width = "20%">
 
-<img src="Media/ScreenEng.png">
+<img src="Media/ScreenRus.png" width = "20%">
