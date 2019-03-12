@@ -1,4 +1,4 @@
 # NIS_Physic
 Jet Motion Simulation
 
-NIS_Physic/Rocket.png
+![Image alt](https://github.com/NIS_Kostanay/NIS_Physic/NIS_Physic/Rocket.png)
