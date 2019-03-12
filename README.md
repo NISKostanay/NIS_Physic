@@ -1,4 +1,4 @@
-# NIS_Physic
+# NIS_Rocket
 Jet Motion Simulation
 
 <img src="Rocket.png">
